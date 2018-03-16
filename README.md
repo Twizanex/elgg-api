@@ -6,18 +6,15 @@ ELGG plugin for exposing REST API
 
 
 ## Upload Folders
-- upload folder "apiadmin-master" into {yourElggServer}/mod folder
-- upload folder "hello" into {yourElggServer}/mod folder
-- upload folder "oauth_api-master" into {yourElggServer}/mod folder
+- upload folder "elgg_with_rest_api" into {yourElggServer}/mod folder
 
 
 # Setup API
 
-## Activate those plugins
+## Activate the plugin
 - Login admin panel and go to plugins section.
-- Activate "Web services" plugin.
-- Activate "apiadmin-master" plugin.
-- Activate "hello" plugin.
+- Activate "elgg_with_rest_api" plugin.
+
 
 ## Configuration
 - Please go to Utilities->API Key Admin section in the right side of the admin panel.
