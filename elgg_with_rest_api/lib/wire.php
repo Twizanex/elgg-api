@@ -130,7 +130,10 @@ function wire_get_posts($context, $limit = 20, $offset = 0, $username) {
             $wire['owner']['guid'] = $owner->guid;
             $wire['owner']['name'] = $owner->name;
             $wire['owner']['username'] = $owner->username;
-            $wire['owner']['avatar_url'] = getProfileIcon($owner); //$owner->getIconURL('small');
+            if($context != "all"){
+                $wire['owner']['avatar_url'] = getProfileIcon($owner); //$owner->getIconURL('small');
+            }
+            
 
             $wire['time_created'] = time_ago($single->time_created);
             $wire['description'] = $single->description;
