@@ -7,12 +7,18 @@ ELGG plugin for exposing REST/RPC hybrid API.
 
 ## Upload Folders
 - upload folder "elgg_with_rest_api" into {yourElggServer}/mod folder
-
+- upload folder "apiadmin-master" into {yourElggServer}/mod folder
 
 ## Activate the plugin
 - Login admin panel and go to plugins section.
 - Activate "elgg_with_rest_api" plugin.
+- Activate "apiadmin-master" plugin (that show the name "API Admin" in plugin list).
 
+## Configuration
+- Please go to Utilities->API Key Admin section in the right side of the admin panel.
+- Click "Generate a new keypair" and generate the keys
+- Copy this api key and save.
+- use this key in a every API calls with the value of "api_key" as a Key-based authentication.
 
 ## How to use the APIs
 - To call the APIs, all you need to do is call the expose method in your application.
